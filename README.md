@@ -1,0 +1,68 @@
+# 🏋️ Spark Powerhouse Gym – Web-Based Gym Management System
+
+![PHP](https://img.shields.io/badge/PHP-8.x-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![HTML](https://img.shields.io/badge/HTML-Frontend-red)
+![CSS](https://img.shields.io/badge/CSS-Styling-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-Client--Side-yellow)
+
+Spark Powerhouse Gym is a **web-based gym management system** developed as part of academic practice.  
+The project focuses on **backend–frontend integration**, **user account management**, and **structured application flow** using PHP and MySQL.
+
+The application simulates a real-world gym platform at a **conceptual level**, emphasizing clean UI design, session-based authentication, and CRUD operations rather than live deployments or external service integrations.
+
+---
+
+## ✨ Features
+
+### 👤 User Module
+- User registration with form validation  
+- Secure user login using PHP sessions  
+- User dashboard after authentication  
+- View personal profile information  
+- Update user details  
+- Upload and manage profile images  
+- Delete user account  
+- Logout functionality  
+
+### 🧠 Application Design
+- MVC-style folder organization (Model / View / Controller)  
+- Server-side logic handled via PHP controllers  
+- Database connectivity using MySQL  
+- Client-side validation using JavaScript  
+- Clean separation between UI, logic, and data handling  
+
+---
+
+## 🛠 Technologies Used
+- PHP  
+- MySQL  
+- HTML  
+- CSS  
+- JavaScript  
+- MVC-style architecture  
+- Session-based authentication  
+
+---
+
+## ▶ How to Run
+1. Place the project folder inside your local server directory (e.g., `htdocs` for XAMPP)
+2. Start **Apache** and **MySQL**
+3. Import the provided database into MySQL
+4. Open the project in a browser using `localhost`
+5. Register a new user and log in to access the system
+
+---
+
+## ℹ Notes
+- This project is an **academic simulation**
+- No real payments, emails, or external APIs are used
+- All authentication and data handling are performed locally
+- Designed to demonstrate web application structure and logic
+
+---
+
+## 👤 Author
+**Sajidur Rahman Sajid**  
+BSc in Computer Science & Engineering (CSE)  
+Final-year undergraduate student
