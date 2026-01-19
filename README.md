@@ -1,10 +1,10 @@
 # 🏋️ Spark Powerhouse Gym – Web-Based Gym Management System
 
-![PHP](https://img.shields.io/badge/PHP-Language-blue)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
-![HTML](https://img.shields.io/badge/HTML-Markup-red)
-![CSS](https://img.shields.io/badge/CSS-Styling-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-Language-yellow)
+![PHP](https://img.shields.io/badge/PHP-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![HTML](https://img.shields.io/badge/HTML-orange)
+![CSS](https://img.shields.io/badge/CSS-blue)
+![MySQL](https://img.shields.io/badge/MySQL-orange)
 
 Spark Powerhouse Gym is a **web-based gym management system** developed as part of academic practice.  
 The project focuses on **backend–frontend integration**, **user account management**, and **structured application flow** using PHP and MySQL.
