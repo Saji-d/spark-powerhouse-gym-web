@@ -1,0 +1,361 @@
+/* =======================================
+   GLOBAL RESET AND PAGE LAYOUT
+   ======================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* =======================================
+   HEADINGS
+   ======================================= */
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  color: #ffa500;
+}
+
+h2.welcome {
+  margin: 40px 0;
+  text-align: center;
+  color: #ffa500;
+  font-size: 26px;
+}
+
+
+/* =======================================
+   FORMS AND INPUTS
+   ======================================= */
+form {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+td {
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+td:first-child {
+  width: 180px;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+td input[type="radio"]:first-of-type,
+td input[type="checkbox"]:first-of-type {
+  margin-left: 0;
+}
+
+td span {
+  margin-right: 10px; /* spacing for grouped radio inputs */
+}
+
+#Date_of_Birth,
+#yes,
+#no {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* =======================================
+   BUTTONS
+   ======================================= */
+input[type="submit"] {
+  background-color: #6f42c1;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #5936a7;
+}
+
+.logout-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #28a745; /* Green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #218838;
+}
+
+.btn-logout-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #6f42c1;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-logout-link:hover {
+  background-color: #5936a7;
+}
+
+
+/* =======================================
+   LINKS + NAVIGATION (HOME PAGE)
+   ======================================= */
+ul.home-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 20px 0;
+  white-space: nowrap;
+}
+
+ul.home-links li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+ul.home-links a {
+  display: inline-block;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #1a75ff;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #0047b3;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* Make logout button look identical to others but green */
+ul.home-links a.logout-green {
+  background-color: #28a745;
+  border: 1px solid #1c7430;
+  color: white;
+}
+
+ul.home-links a.logout-green:hover {
+  background-color: #218838;
+}
+
+
+ul.home-links a:hover {
+  background-color: #005ce6;
+}
+
+ul.home-links a[href*="user_delete.php"] {
+  background-color: #cc0000;
+  border-color: #990000;
+}
+
+ul.home-links a[href*="user_delete.php"]:hover {
+  background-color: #e60000;
+}
+
+/* =======================================
+   STATUS MESSAGES
+   ======================================= */
+.error-msg {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+/* =======================================
+   USER PROFILE DISPLAY BOX
+   ======================================= */
+.user-data-box {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* =======================================
+   ACTION BUTTON SECTION
+   ======================================= */
+.action-links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.action-links a {
+  margin: 0 10px;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* =======================================
+   OTHER LINKS (Login / Register etc.)
+   ======================================= */
+.login-redirect {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.login-redirect a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.login-redirect a:hover {
+  color: #63b3ed;
+}
+
+.logout-message {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.username-highlight {
+  color: #00ced1;
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.welcome {
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.username-highlight {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.user-data-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* centers vertically with text block */
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px 40px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.user-data-box img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    display: block;
+    margin-left: auto; /* pushes image slightly right */
+    margin-right: 0;
+}
+
+
+.user-data-box div {
+    flex: 1;
+}
+
+.user-data-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
