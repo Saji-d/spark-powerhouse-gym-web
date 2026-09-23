@@ -17,7 +17,7 @@ The application simulates a real-world gym platform at a **conceptual level**, e
 
 ### 👤 User Module
 - User registration with form validation  
-- Secure user login using PHP sessions  
+- Session-based login with PHP sessions (academic project: no password hashing or prepared statements yet)  
 - User dashboard after authentication  
 - View personal profile information  
 - Update user details  
