@@ -25,7 +25,6 @@
     <a href="#-tech-stack">Tech Stack</a> ·
     <a href="#-getting-started">Getting Started</a> ·
     <a href="#-project-structure">Structure</a> ·
-    <a href="#-roadmap">Roadmap</a> ·
     <a href="#-author">Author</a>
   </p>
 </div>
@@ -141,8 +140,7 @@ Register a member, log in and explore the profile pages. The `uploads/` folder m
 
 ## ◈ Project Structure
 
-<details>
-<summary>Show folder tree</summary>
+The app is split into `View` (pages), `control` (request handlers), `model` (database access) and static `css`, `js` and `uploads` folders.
 
 ```text
 spark-powerhouse-gym-web/
@@ -156,25 +154,12 @@ spark-powerhouse-gym-web/
 └── README.md
 ```
 
-</details>
-
-<img src="assets/divider.svg" width="100%" alt="">
-
-## ◈ Roadmap
-
-- [x] Registration with validation, session login and profile pages
-- [x] Profile photo upload, update and account deletion
-- [ ] Hash passwords with `password_hash` and verify with `password_verify`
-- [ ] Switch to prepared statements to prevent SQL injection
-- [ ] Add an SQL schema file to the repository
-- [ ] Add an admin role and a real dashboard
-- [ ] Fix the `../view/` redirect so it matches the `View/` folder on case-sensitive servers
-
 <img src="assets/divider.svg" width="100%" alt="">
 
 ## ◈ Author
 
-**Sajidur Rahman Sajid**: Full-Stack Developer and AI engineer from Dhaka. BSc in CSE at American International University-Bangladesh (AIUB).
+**Sajidur Rahman Sajid**: Full-Stack Developer and AI engineer from Dhaka.<br>
+BSc in CSE at American International University-Bangladesh (AIUB).
 
 <p>
   <a href="https://www.sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=flat-square&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"></a>
