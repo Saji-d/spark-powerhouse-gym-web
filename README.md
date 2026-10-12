@@ -52,7 +52,7 @@ A companion desktop version of the same idea lives in [spark-powerhouse-gym-csha
   </tr>
   <tr>
     <td valign="top"><b>Profile photo upload</b><br>Images are stored in <code>uploads/</code> with a timestamp prefix and shown on the profile.</td>
-    <td valign="top"><b>Update and delete</b><br>Members can change phone, address, membership and photo, or remove their account.</td>
+    <td valign="top"><b>Update and delete</b><br>Members can change phone, address, membership and photo. They can also remove their account.</td>
     <td valign="top"><b>Welcome cookies</b><br>A cookie remembers the visitor so the home page can greet them back.</td>
   </tr>
 </table>
@@ -71,7 +71,7 @@ A companion desktop version of the same idea lives in [spark-powerhouse-gym-csha
 
 ## ◈ Architecture
 
-Views post to controllers, controllers call helpers in `model/db.php`, and the model talks to the MySQL database `gym_db` through `mysqli`.
+Views post to controllers. Controllers call helpers in `model/db.php`, which talk to the MySQL database `gym_db` through `mysqli`.
 
 ```mermaid
 flowchart LR
